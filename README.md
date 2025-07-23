@@ -1,0 +1,1 @@
+Small personal accounting API
