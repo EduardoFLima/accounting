@@ -1,6 +1,10 @@
 from flask import jsonify
 from flask import current_app as app
 
+@app.route("/health")
+def health():
+    return "OK", 200
+
 @app.route('/transactions', methods=['GET'])
 def get_transactions():
     transactions = [
